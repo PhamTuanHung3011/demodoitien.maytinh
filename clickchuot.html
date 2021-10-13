@@ -5,10 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-    <img id="myImage" src="soccer-football-ball_118047-2366.jpg" height="100px" width="100px"/>
-    <p> Click button below to move the image to right</p>
-    <input type="button" value="Click Me" onclick="moreRight()">
+    <form>
+        <img id="myImage" src="soccer-football-ball_118047-2366.jpg" height="100px" width="100px"/>
+        <p> Click button below to move the image to right</p>
+        <input type="button" value="Click Me" onclick="moreLeft()">
+        <input type="button" value="Click Me!" onclick="moreRight()">
+    </form>
     <script>
         let imObj = null;
 
@@ -22,13 +24,16 @@
         }
         function moreRight(){
             imObj.style.left= parseInt(imObj.style.left)+ 10 +'px';
+                    }
+        function moreLeft(){
+            imObj.style.left= parseInt(imObj.style.left)- 10 +'px';
         }
         window.onload=init;
         // <input type="button" value="Click Me" onClick="moveRight();">
         // <input type="button" value="Click Me" onClick="moveRight();"/>
     </script>
 
-</form>
+
 
 
 
